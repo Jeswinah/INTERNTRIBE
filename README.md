@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 # INTERNTRIBE"# INTERNTRIBE" 
+=======
+# INTERNTRIBE
+>>>>>>> b8b5d1cd15f4f9360a8ecdc9c713e39e054bb704
