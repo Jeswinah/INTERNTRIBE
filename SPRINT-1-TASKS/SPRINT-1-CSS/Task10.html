@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- CSS Section -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .main {
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        color: white;
+        background-color: rgb(200, 186, 173);
+      }
+      .main > * {
+        margin-bottom: 5px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+      header {
+        height: 10vh;
+        background-color: rgb(41, 39, 39);
+      }
+      nav {
+        background-color: rgb(160, 153, 153);
+        height: 10vh;
+      }
+      ul {
+        display: flex;
+      }
+      li {
+        margin: 0px 10px;
+        list-style: none;
+      }
+      li:hover {
+        color: blue;
+        cursor: pointer;
+      }
+      #ss {
+        background-color: rgb(78, 72, 72);
+        height: 15vh;
+      }
+      .box {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+      }
+      .box1,
+      .box2,
+      .box3 {
+        height: 200px;
+        width: 200px;
+        grid-column: span 1;
+        background-color: rgb(236, 231, 231);
+        margin: 10px auto;
+      }
+      footer {
+        background-color: rgb(95, 81, 81);
+        height: 10vh;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+    <!-- HTML Section -->
+    <div class="main">
+      <header>Header</header>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Product</li>
+          <li>Services</li>
+        </ul>
+      </nav>
+      <section id="ss">Sideshow</section>
+      <div class="box">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+      </div>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>
