@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: white;
+      }
+      .main {
+        background-color: rgb(202, 204, 207);
+        width: 500px;
+        padding: 20px 20px 0px 20px;
+      }
+      #p-title {
+        display: inline;
+        background-color: rgb(39, 35, 35);
+        padding: 2px 8px;
+      }
+      h3,
+      nav {
+        display: block;
+        margin-bottom: 8px;
+        background-color: rgb(78, 70, 70);
+        padding: 5px;
+        text-align: center;
+      }
+      #mainbar {
+        display: inline-block;
+        background-color: rgb(39, 35, 35);
+        height: 100px;
+        width: 260px;
+        text-align: center;
+      }
+      #sidebar {
+        margin: 0px 10px;
+        display: inline-block;
+        background-color: rgb(153, 154, 157);
+        height: 100px;
+        width: 150px;
+        text-align: center;
+      }
+      .content {
+        margin: 0px 10px;
+      }
+      footer {
+        margin-top: 10px;
+        background-color: rgb(78, 70, 70);
+        padding: 10px;
+        height: auto;
+        text-align: center;
+      }
+
+      @media screen and (max-width: 400px) {
+        .main {
+          width: fit-content;
+        }
+        #mainbar,
+        #sidebar {
+          width: 100%;
+          display: block;
+          margin: 5px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h3 id="p-title">Page title</h3>
+      <nav>Navigation</nav>
+      <div class="content">
+        <h3>Introduction</h3>
+        <h4 id="mainbar">Main content area</h4>
+        <h4 id="sidebar">Sidebar</h4>
+      </div>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>
