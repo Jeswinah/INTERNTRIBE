@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- CSS section -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .mainbox {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .box {
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, auto);
+        text-align: center;
+        gap: 2px;
+        width: 400px;
+        height: 400px;
+        font-weight: bold;
+      }
+      .box > * {
+        background-color: gainsboro;
+        display: grid;
+        align-items: center;
+      }
+      header {
+        grid-column: span 2;
+      }
+      nav {
+        grid-column: span 2;
+      }
+      main {
+        grid-row: span 4;
+      }
+      aside {
+        grid-row: span 2;
+      }
+      section {
+        grid-row: span 2;
+      }
+      #aside {
+        grid-column: span 2;
+      }
+
+      footer {
+        grid-column: span 2;
+      }
+    </style>
+    <!-- HTML Section -->
+    <div class="mainbox">
+      <div class="box">
+        <header>Header</header>
+        <nav>nav</nav>
+        <main>main</main>
+        <aside>aside</aside>
+        <section>section</section>
+        <aside id="aside">aside</aside>
+        <footer>footer</footer>
+      </div>
+    </div>
+  </body>
+</html>
