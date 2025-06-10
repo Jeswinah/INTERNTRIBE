@@ -1,0 +1,197 @@
+@import url("https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css");
+@import url("https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Navbar Section */
+.navbar {
+  display: flex;
+  background-color: black;
+  color: white;
+  justify-content: space-around;
+  padding: 0px 10px;
+  align-items: center;
+  height: 10vh;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: x-large;
+  font-family: "Times New Roman", Times, serif;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  margin: 10px;
+  list-style: none;
+}
+
+li:hover {
+  color: cyan;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  background-color: rgb(238, 234, 231);
+  padding: 40px 10px;
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  width: 40vw;
+  min-width: 300px;
+}
+
+#title-main {
+  font-size: x-large;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.image-sec {
+  width: 40vw;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.image-sec img {
+  width: 100%;
+  height: auto;
+}
+
+#para {
+  padding-bottom: 10px;
+}
+
+button {
+  display: block;
+  width: 150px;
+  height: 40px;
+  background-color: orange;
+  border: 0;
+  color: white;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+/* Cards Section */
+#ntitle {
+  margin: 40px;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.card {
+  width: 300px;
+  margin: 10px;
+  background-color: rgb(248, 244, 239);
+}
+
+.content1 {
+  padding: 10px;
+}
+
+/* Footer Section */
+.footer_box {
+  background-color: rgb(35, 35, 35);
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 30px 20px;
+  flex-wrap: wrap;
+}
+
+.box1 {
+  width: 300px;
+  margin: 10px;
+}
+
+.b-head {
+  margin: 10px 0px;
+}
+
+.social i {
+  padding: 5px;
+}
+
+.social p {
+  display: flex;
+  margin: 15px 0px;
+  align-items: center;
+}
+
+.container-one {
+  display: flex;
+  margin: 10px 0;
+}
+
+.container-one i {
+  margin-right: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  .hero {
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .content,
+  .image-sec {
+    width: 90%;
+  }
+
+  .footer_box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box1 {
+    width: 90%;
+    text-align: center;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li {
+    margin: 8px 0;
+  }
+}
