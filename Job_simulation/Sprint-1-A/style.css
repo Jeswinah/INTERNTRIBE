@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url("images/3.svg");
+  background-size: cover;
+  color: #f5f5f5;
+  font-family: Poppins, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+/* Navbar  */
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+}
+.btn {
+  border-radius: 30px;
+  padding: 5px 40px;
+  border: none;
+  color: white;
+  background-color: rgb(28, 166, 152);
+  opacity: 0.6;
+  transition: all 2s;
+  width: fit-content;
+}
+.btn:hover {
+  font-size: 15px;
+}
+#md {
+  display: none;
+}
+
+.Hero {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  height: 85vh;
+  justify-content: center;
+  color: rgba(245, 245, 245, 0.61);
+}
+h2 {
+  font-size: 7vmin;
+}
+h5 {
+  font-size: 3vmin;
+  margin: 0 5px;
+}
+.line {
+  border-left: 3px solid rgb(34, 123, 192);
+  height: 30px;
+}
+.Hero > * {
+  margin: 5px 50px;
+}
+#blue {
+  color: rgb(0, 170, 237);
+}
+.para {
+  padding: 10px 0px;
+}
+/* Brand Roll */
+.brands-roll {
+  background-color: black;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brands-roll img {
+  width: 150px;
+  height: 80px;
+  margin: 0px 40px;
+}
+
+/* Responsive Design */
+
+@media only screen and (max-width: 700px) {
+  .Hero {
+    width: 100%;
+    margin: 0;
+  }
+  #ld {
+    display: none;
+  }
+  #md {
+    display: block;
+  }
+  .btn {
+    width: fit-content;
+    transition: none;
+  }
+  #logo {
+    width: 100px;
+  }
+  .Hero > * {
+    margin: 5px 20px;
+  }
+}
