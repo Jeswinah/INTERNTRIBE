@@ -26,7 +26,7 @@ body {
 
 .logo {
   font-size: x-large;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Pacifico', cursive;
 }
 
 ul {
@@ -112,7 +112,12 @@ button {
 .card {
   width: 300px;
   margin: 10px;
+  border-radius: 10px;
   background-color: rgb(248, 244, 239);
+  
+}
+.card img{
+  border-radius:10px ;
 }
 
 .content1 {
