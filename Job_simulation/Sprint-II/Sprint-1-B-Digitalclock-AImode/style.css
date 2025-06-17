@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.clock-container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 5rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  max-width: 400px;
+}
+
+#clock {
+  font-size: 3.5rem;
+  letter-spacing: 4px;
+}
+
+.date {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  #clock {
+    font-size: 2.5rem;
+  }
+
+  .date {
+    font-size: 1rem;
+  }
+  .clock-container {
+    padding: 1.5rem 2rem;
+  }
+}
