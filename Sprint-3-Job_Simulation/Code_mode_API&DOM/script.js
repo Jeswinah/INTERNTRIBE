@@ -1,6 +1,6 @@
 const data = document.getElementById("data");
 const box = document.getElementById("box");
-//  fetch the api and convert into json format 
+//  fetch the api and convert into json format
 const apihandler = async () => {
   const api = "https://jsonplaceholder.typicode.com/users";
   const a = await fetch(api);
@@ -11,9 +11,9 @@ const apihandler = async () => {
 
 apihandler();
 const handler = (res) => {
+  let inval = 0;
   // using map function getting each object in the parameter n
   res.map((n) => {
-
     // Creating all the elements needed
     const tr = document.createElement("tr");
     const td = document.createElement("td");
@@ -40,35 +40,45 @@ const handler = (res) => {
       // if the modulus value is 1 the specific background color will apply
       tr.style.backgroundColor = "rgb(208, 208, 208)";
     }
-// Edit button function
-    ebtn.addEventListener("click", () => {
-      const input1 = document.createElement("input");
-      input1.placeholder="Click Name or city to edit"
-      const submitbtn = document.createElement("button");
-      input1.id = n.id;
-      box.append(input1);
-      box.append(submitbtn);
-      submitbtn.innerText = "Submit";
-      tr.style.backgroundColor="yellow"
-      let v;
-      // if the name field is clicked
-      td1.addEventListener("click", () => {
-        input1.value = n.name;
-        input1.focus();
-        v=0;
-      });
-      // If the city field clicked
-      td2.addEventListener("click", () => {
-        input1.value = n.address?.city;
-        input1.focus();
-        v=1;
-      });
 
-      submitbtn.addEventListener("click", () => {
-        v==0? names.textContent = input1.value:cities.textContent=input1.value
-        box.removeChild(input1);
-        box.removeChild(submitbtn);
-      });
+    // Edit button function
+    ebtn.addEventListener("click", () => {
+      inval++;
+      console.log(inval);
+    // inval=1, this condition is used to prevent multiple input field  
+      if (inval == 1) {
+        const input1 = document.createElement("input");
+        input1.placeholder = "Click Name or city to edit";
+        const submitbtn = document.createElement("button");
+        input1.id = n.id;
+        box.append(input1);
+        box.append(submitbtn);
+        submitbtn.innerText = "Submit";
+        tr.style.backgroundColor = "yellow";
+
+        let v;
+        // if the name field is clicked
+        td1.addEventListener("click", () => {
+          input1.value = n.name;
+          input1.focus();
+          v = 0;
+        });
+        // If the city field clicked
+        td2.addEventListener("click", () => {
+          input1.value = n.address?.city;
+          input1.focus();
+          v = 1;
+        });
+
+        submitbtn.addEventListener("click", () => {
+          inval=0;
+          v == 0
+            ? (names.textContent = input1.value)
+            : (cities.textContent = input1.value);
+          box.removeChild(input1);
+          box.removeChild(submitbtn);
+        });
+      }
     });
 
     // Delete row
