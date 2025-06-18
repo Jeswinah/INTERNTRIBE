@@ -29,13 +29,13 @@ const handler = (res) => {
     // Buttons:edit-delete
     const editbtn = row.appendChild(ebtn);
     const deletebtn = row.appendChild(dbtn);
-    editbtn.innerHTML = "Edit";
+    editbtn.innerText = "Edit";
     editbtn.id = "ebtn";
-    deletebtn.innerHTML = "Delete";
+    deletebtn.innerText = "Delete";
     deletebtn.id = "dbtn";
-    names.innerHTML = n.name;
+    names.innerText = n.name;
     id.innerHTML = n.id;
-    cities.innerHTML = n.address?.city;
+    cities.innerText = n.address?.city;
     if (n.id % 2) {
       // if the modulus value is 1 the specific background color will apply
       tr.style.backgroundColor = "rgb(208, 208, 208)";
