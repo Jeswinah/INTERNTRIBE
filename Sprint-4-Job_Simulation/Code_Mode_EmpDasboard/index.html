@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <nav>
+        <div class="logo">
+          <h2>Employee Dashboard</h2>
+        </div>
+        <div class="profile">
+          <button id="theme" value="Light">Dark</button>
+          <img src="image/user.jpg" alt="user image" width="30px" />
+          <h4>Admin</h4>
+        </div>
+      </nav>
+      <section class="main-body">
+        <div class="box">
+          <div class="content">
+            <h2>Company Employees</h2>
+            <div class="btns">
+              <input
+                type="text"
+                placeholder="Enter a Employee name"
+                id="input"
+                autocomplete="off"
+              />
+              <select id="employeeSelect">
+                <option value="">-- Select Employee --</option>
+                <option value="Development" class="selectvalue">
+                  Development
+                </option>
+                <option value="HR" class="selectvalue">HR</option>
+                <option value="Testing" class="selectvalue">Testing</option>
+                <option value="Support" class="selectvalue">Support</option>
+                <option value="Marketing" class="selectvalue">Marketing</option>
+              </select>
+              <button id="uppercase" onclick="upper()">Uppercase</button>
+              <button class="avgsalary" onclick="avgsalary()">
+                Avg Salary
+              </button>
+            </div>
+          </div>
+          <table id="table">
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Department</th>
+              <th>Role</th>
+              <th>Salary</th>
+            </tr>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

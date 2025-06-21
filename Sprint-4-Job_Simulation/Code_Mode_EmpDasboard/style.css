@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: rgb(29, 29, 148);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  height: 8vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.profile {
+  display: flex;
+  align-items: center;
+}
+.profile img {
+  margin: 0 10px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+}
+
+/* Main Body */
+.main-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 92vh;
+  background-color: rgb(242, 242, 242);
+  padding: 10px;
+}
+.box {
+  width: 90vw;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  overflow-x: auto;
+}
+.box h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-bottom: 15px;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table,
+th,
+td {
+  border: 3px solid rgb(116, 116, 196);
+  padding: 10px 15px;
+}
+td {
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+/* Buttons */
+button {
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+#uppercase {
+  background-color: rgb(131, 131, 202);
+}
+#uppercase:focus {
+  background-color: red;
+}
+.avgsalary {
+  background-color: rgb(23, 94, 133);
+}
+.avgsalary:focus {
+  background-color: rgb(255, 0, 0);
+}
+
+/* Inputs and Select */
+#input,
+select {
+  padding: 8px;
+  border: none;
+  background-color: rgb(236, 234, 230);
+  border-radius: 10px;
+  outline: none;
+}
+
+/* Theme Button */
+#theme {
+  color: white;
+  background-color: black;
+  width: 80px;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  table,
+  th,
+  td {
+    font-size: 14px;
+    padding:1px;
+  }
+
+  button {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  #input,
+  select {
+    margin: 10px;
+    width: 100%;
+  }
+
+  .profile img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .main-body{
+    padding: 0;
+  }
+  .box {
+    padding: 15px 0px;
+  }
+  table,
+  tr,
+  td {
+    padding: 5px 0px;
+    text-align: center;
+    overflow-wrap: anywhere;
+  }
+  .box h2 {
+    font-size: 20px;
+  }
+  #theme {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
