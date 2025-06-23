@@ -1,20 +1,8 @@
 // Theme mode
-const theme = document.querySelector("#theme");
-const body = document.querySelector(".main-body");
-theme.addEventListener("click", (e) => {
-  let curtheme = e.target.value;
-  theme.innerText = curtheme;
-  if (curtheme === "Light") {
-    body.style.backgroundColor = "black";
-    theme.style.backgroundColor = "white";
-    e.target.value = "Dark";
-    theme.style.color = "black";
-  } else {
-    body.style.backgroundColor = "white";
-    theme.style.backgroundColor = "black";
-    theme.style.color = "white";
-    e.target.value = "Light";
-  }
+
+theme.addEventListener("click", () => {
+ const mainbody=document.querySelector('.main-body')
+ mainbody.classList.toggle('dark')
 });
 
 // Employee Data
