@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+.category-btns {
+  display: flex;
+  justify-content: center;
+}
+.category-btns button {
+  padding: 5px 8px;
+  border-radius: 5px;
+  margin: 10px 5px;
+  border: 0;
+}
+
+.card,.el,.bk,.ck {
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+}
+.el {
+  background-color: #ffe5b4;
+}
+.bk {
+ background-color:#E6E6FA;
+
+}
+.ck {
+  background-color: #D0F0C0;
+}
+.btns{
+  background-color: rgb(75, 72, 72);
+  color: white;
+}
