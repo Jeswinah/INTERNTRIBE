@@ -76,7 +76,6 @@ const UserList = () => {
     setInput(e.target.value);
   };
   // console.log(input);
-  
   return (
     <>
       <div className="head">
