@@ -1,0 +1,43 @@
+.container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.user-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  width: 200px;
+  background-color: #f5f5f5;
+}
+
+.user-card.admin {
+  background-color: #ffcccc;
+}
+
+.user-card.member {
+  background-color: #cce5ff;
+}
+
+.user-card.guest {
+  background-color: #e0e0e0;
+}
+
+.underage {
+  color: red;
+  font-weight: bold;
+}
+.search-box {
+  padding: 8px;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
